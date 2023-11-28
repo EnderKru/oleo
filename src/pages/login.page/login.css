@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    background-color: black;
+    background-image: url(/public/логин\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg{
+    height: 652px;
+    position: fixed;
+    right: -15px;
+}
+.logo{
+    padding: 10px;
+    position: fixed;
+}  
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 370px;
+    padding: 20px; 
+}
+input{
+    background: #222222;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 12px;
+    color: #AAA9A9;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+.or{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin: 10px;
+}
+.or::after, .or::before{
+    margin: auto;
+    content: "";
+    background-color: #222222;
+    height: 2px;
+    width: 155px;
+}
+/* .btm-check-code{
+    background-color: #222222;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    color: #AAA9A9;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+.check-code{
+    display: flex;
+    justify-content: space-between;
+} */
+.registr-box{
+    width: 405px;
+    background-color: #0B0B0B;
+    border-radius: 80px;
+    padding: 20px;
+    position: absolute;
+    left: 8%;
+    top: 12%;
+}
+.signup-task{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Open Sans Hebrew', serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.Cook{
+    border-radius: 13px;
+    background: #FFDC33;
+    padding: 12px 25px;
+    color: #000;
+    font-family: Open Sans Hebrew;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 30px;
+    border: 0;
+}
+.appetit{
+    display: flex;
+    width: 219px;
+    height: 32px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display:flex;
+    align-self: center;
+    margin: 5px;
+    
+}
+.button{
+    display: flex;
+    justify-content: start;
+}
+.have-acc{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-top: 20px;
+}
+.have-acc a{
+    text-shadow: 0px 0px 45.900001525878906px #FFDC33;
+    color: #FFDC33;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: -6px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.forgot-password{
+    display: flex;
+    justify-content: start;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-left: 40px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.blackberry{
+    position: absolute;
+    bottom: -37%;
+    left: -14%;
+    animation: slideIn 1s ease-out;
+    overflow: hidden;
+}
+.leaves {
+    animation: slideIn 1s ease-out; /* название анимации, продолжительность, функция сглаживания */
+    overflow: hidden;
+    position: absolute;
+    top: -50%;
+    left: -24%;
+  }
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%); /* начальное положение за пределами экрана сверху */
+      opacity: 0; /* начальная прозрачность */
+    }
+    100% {
+      transform: translateX(0); /* конечное положение на экране */
+      opacity: 1; /* конечная непрозрачность */
+    }
+  }
