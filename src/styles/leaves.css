@@ -1,0 +1,15 @@
+.background-leaves{
+    margin: 0;
+    overflow: hidden;
+    background: url('../../public/images/листься.png') center center/cover no-repeat;
+    animation: slideBackground 1s ease-in-out;
+    height: 100vh;
+}
+@keyframes slideBackground {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
