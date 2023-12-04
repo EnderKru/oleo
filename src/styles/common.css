@@ -9,4 +9,8 @@ body{
 }
 :root{
     --roboto-font:'Roboto', sans-serif;
+    --accent-color: #FFDC33; 
+}
+button:active{
+    transform: scale(0.95);
 }

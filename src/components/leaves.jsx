@@ -1,6 +1,6 @@
 import '../styles/leaves.css'
 
-const leaves = ()=>{
+const Leaves = ()=>{
     return (
         <div className='background-leaves'>
             {}
@@ -8,4 +8,4 @@ const leaves = ()=>{
     )
 }
 
-export default leaves
+export default Leaves
