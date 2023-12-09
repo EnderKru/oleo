@@ -1,7 +1,7 @@
 
 function confirmCod () {
-    return(
-        
+    return (
+        <></>
     )
 
 export default confirmCod

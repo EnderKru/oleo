@@ -13,7 +13,7 @@ function Signup() {
                     <img src="/src/assets/images/logo.png" alt="logo" className="logo" />
                     <div className="conteiner-signup">
                         <div className="box-signup">
-                            <div class="signup-task">
+                            <div className="signup-task">
                                 SIGN UP
                             </div>
                             <div className="input-box">
