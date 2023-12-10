@@ -1,6 +1,6 @@
 import React, { useState } from 'react' //какой то { useState }
 // import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Signup from './components/signup.jsx'
+import Signup from "./pages/signupPage/signup.jsx"
 import Leaves from './components/leaves.jsx'
 
 function App() {
