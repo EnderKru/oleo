@@ -1,0 +1,13 @@
+.no-page-body{
+    background-image: url(/src/assets/images/404bg.svg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    font-size: 36px;
+    margin-left: 20px;
+}
