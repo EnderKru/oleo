@@ -1,4 +1,4 @@
-export {MainPage} from './mainPage/mainPage.jsx'
+export {MainPage} from './mainPage.jsx/mainPage.jsx'
 export {LoginPage} from './loginPage/loginPage.jsx'
 export {NoPage} from './noPage/noPage.jsx'
 export {CookPage} from './cookPage/cookPage.jsx'

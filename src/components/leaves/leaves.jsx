@@ -1,4 +1,4 @@
-import "@components/leaves.css"
+import "../leaves/leaves.css"
 
 const Leaves = ()=>{
     return (
