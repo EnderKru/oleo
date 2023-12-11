@@ -2,7 +2,7 @@
 .signup-main{
     background-image: url(/src/assets/images/авторизация.svg);
     background-size: cover;
-    height:100%;
+    height:100vh;
     width: 100%;
     background-repeat: no-repeat;   
 }

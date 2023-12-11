@@ -1,6 +1,6 @@
 import "../categoriesPage/categoriesPage.css"
 
-export default function CategoriesPage() {
+export function CategoriesPage() {
   return (
     <div>categoriesPage</div>
   )

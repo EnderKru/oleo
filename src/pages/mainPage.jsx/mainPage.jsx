@@ -2,7 +2,7 @@ import './mainPage.css'
 
 import React from 'react'
 
-export default function MainPage() {
+export function MainPage() {
   return (
     <div>MainPage</div>
   )

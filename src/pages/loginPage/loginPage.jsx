@@ -1,6 +1,6 @@
 import '../loginPage/loginPage.css'
 
-export default function LoginPage() {
+export function LoginPage() {
   return (
     <div className='login'>
         <img src="/src/assets/images/logo.svg" alt="logo" className="logo" />

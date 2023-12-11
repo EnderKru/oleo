@@ -1,6 +1,6 @@
 import "../cookPage/cookPage.css"
 
-export default function CookPage() {
+export function CookPage() {
   return (
     <div>cookPage</div>
   )
