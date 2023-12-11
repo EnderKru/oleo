@@ -1,14 +1,15 @@
 import React, { useState } from 'react' //какой то { useState }
 // import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Signup from "./pages/signupPage/signup.jsx"
-import Leaves from './components/leaves.jsx'
+import Leaves from './components/leaves/leaves.jsx'
+import LoginPage from './pages/loginPage/loginPage.jsx'
 
 function App() {
     return (
     <div>
         <div>
             <Leaves />
-            <Signup />
+            <LoginPage />
         </div>
     </div>
     )

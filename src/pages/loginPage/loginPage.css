@@ -1,21 +1,20 @@
-
-.signup-main{
-    background-image: url(/src/assets/images/бг.png);
+.login{
+    background-image: url(/src/assets/images/Войти.svg);
     background-size: cover;
-    height:100%;
+    height:100vh;
     width: 100%;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 .logo{
     padding: 10px;
 }
-.conteiner-signup{
-    display: flex;
+.login-box{
     align-items: center;
-    margin-left: 6%;
+    margin-left: 8%;
     margin-top: 2%
 }
-.signup-task{
+.login-task{
     font-size: 30px;
     font-weight: bold;
     font-family: var(--roboto-font);
@@ -44,29 +43,30 @@ input{
     justify-content: center;
     border: 0;
 }
-.box-signup{
+.or{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin: 10px;
+}
+.or::after, .or::before{
+    margin: auto;
+    content: "";
+    background-color: #222222;
+    height: 2px;
+    width: 155px;
+}
+.login-box{
     width:fit-content;
     background-color: #0B0B0B;
     border-radius: 50px;
     padding: 20px;
     z-index: 11;
-}
-#Cook, #get-code{
-    border-radius: 13px;
-    background: var(--accent-color);
-    padding: 12px 25px;
-    color: #000;
-    font-family: var(--roboto-font);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    border: 0;
-}
-.email-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .appetit{
     display: flex;
@@ -78,9 +78,21 @@ input{
     margin: 5px;
     
 }
-.btn{
+.button{
     display: flex;
     padding: 0 27px;
+}
+.cook{
+    border-radius: 13px;
+    background: var(--accent-color);
+    padding: 12px 25px;
+    color: #000;
+    font-family: var(--roboto-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 0;
 }
 .have-acc{
     display: flex;
@@ -112,7 +124,6 @@ input{
     font-weight: 200;
     margin: 10px 0;
 }
-
 .berrie{
     overflow: hidden;
     background: url(/src/assets/images/вишня.png) center center/cover no-repeat;
@@ -124,10 +135,6 @@ input{
     position: absolute;
     z-index: 11;
 }
-#cod-task{
-    margin: 10px;
-}
-
 @keyframes slideBackground {
     from {
       transform: translateX(-100%);
@@ -136,19 +143,16 @@ input{
       transform: translateX(0%);
     }
   }
-
-@media screen and (min-width: 1680px) {
-    .conteiner-signup{
-        margin-left: 8%;
-        margin-top: 1%;
-    }
+  @media screen and (min-width: 1680px) {
     .logo{
         width: 15%;
     }
-    .box-signup{
+    .login-box{
         padding: 40px;
+        margin-left: 8%;
+        margin-top: 1%;
     }
-    .signup-task{
+    .login-task{
         font-size: 45px;
     }
     .input-box{
@@ -159,7 +163,7 @@ input{
         font-size: 30px;
         padding: 15px;
     }
-    #Cook, #get-code{
+    .Cook{
         font-size: 32px;
     }
     .appetit{
@@ -177,14 +181,12 @@ input{
     }
 }
 @media screen and (max-width: 1680px) {
-    .conteiner-signup{
+    .login-box{
+        padding: 30px;
         margin-left: 8%;
         margin-top: 1.5%;
     }
-    .box-signup{
-        padding: 30px;
-    }
-    .signup-task{
+    .login-task{
         font-size: 30px;
     }
     .input-box{
@@ -195,7 +197,7 @@ input{
         font-size: 20px;
         padding: 12px;
     }
-    #Cook, #get-code{
+    .cook{
         font-size: 28px;
     }
     .appetit{
@@ -214,7 +216,7 @@ input{
 }
 @media screen and (max-width: 1530px) {
 
-    .box-signup{
+    .login-box{
         padding: 20px;
     }
     input{
@@ -223,10 +225,10 @@ input{
     }
 }
 @media screen and (max-width: 1440px) {
-    .box-signup{
+    .login-box{
         padding: 16px;
     }
-    .signup-task{
+    .login-task{
         font-size: 28px;
     }
     input{
@@ -237,7 +239,7 @@ input{
     .input-box{
         width: 380px;
     }
-    #Cook, #get-code{
+    .cook{
         font-size: 20px;
     }
     .appetit{
@@ -255,10 +257,10 @@ input{
     }
 }
 @media screen and (max-width: 1240px) {
-    .box-signup{
+    .login-box{
         padding: 10px;
     }
-    .signup-task{
+    .login-task{
         font-size: 20px;
         margin-top: 10px;
     }
@@ -270,7 +272,7 @@ input{
         padding: 5px 15px;
         row-gap: 0;
     }
-    #Cook, #get-code{
+    .cook{
         font-size: 18px;
         padding: 10px 15px;
     }
@@ -293,7 +295,7 @@ input{
     .logo{
         width: 12%;
     }
-    .box-signup{
+    .login-box{
         padding: 5px;
     }
     input{
@@ -304,7 +306,7 @@ input{
     .input-box{
         width: 300px;
     }
-    #Cook, #get-code{
+    .cook{
         font-size: 14px;
         padding: 10px 15px;
         border-radius: 10px;
@@ -326,20 +328,18 @@ input{
     .logo{
         width: 15%;
     }
-    .signup-main{
-        background-image: url(/src/assets/images/bg\ for\ phone.png);
+    .login{
+        background-image: url(/src/assets/images/phone\ log\ in.svg);
         background-size: cover;
     }
-    .conteiner-signup{
+    .login-box{
         justify-content: center;
         align-items: center;
         margin-left: 0;
         margin-top: 0;
-    }
-    .box-signup{
         padding: 10px;
     }
-    .signup-task{
+    .login-task{
         font-size: 20px;
     }
     input{
@@ -350,7 +350,7 @@ input{
     .input-box{
         width: 320px;
     }
-    #Cook, #get-code{
+    .cook{
         font-size: 15px;
     }
     .appetit{
@@ -375,10 +375,10 @@ input{
     .logo{
         width: 25%;
     }
-    .box-signup{
+    .login-box{
         padding: 5px;
     }
-    .signup-task{
+    .login-task{
         font-size: 22px;
     }
     input{
