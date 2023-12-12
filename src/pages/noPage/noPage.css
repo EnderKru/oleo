@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 .donate-img{
-    margin: 30px;
+    display: flex;
     z-index: 9;
 }
 .donate-img::after, .donate-img::before{
@@ -15,6 +15,7 @@
     font-size: 250px;
     font-family: var(--roboto-font);
     color: var(--accent-color);
+    font-weight: 600;
 }
 .donate-img::before{
     margin-right: -150px;
@@ -41,3 +42,19 @@
       transform: translateX(-100%);
     }
   }
+
+@media screen and (max-width:736px) {
+    .donate-img::after, .donate-img::before{
+        font-size: 150px;
+    }
+    .donate-img img{
+        width: 250px;
+    }
+    .donate-img::before{
+        margin-right: -90px;
+        z-index: 10;
+    }
+    .donate-img::after{
+        margin-left: -100px;
+    }
+}

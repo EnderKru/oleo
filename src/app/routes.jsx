@@ -7,7 +7,8 @@ import {
   ProfilePage,
   CookPage,
   CategoriesPage,
-  Leaves
+  Leaves,
+  ResetPasswordPage
 } from "../pages"
 
 export const router = createBrowserRouter([
@@ -42,5 +43,9 @@ export const router = createBrowserRouter([
   {
     path: '/profile',
     element: <ProfilePage />
+  },
+  {
+    path: '/reset-password',
+    element: <ResetPasswordPage />
   }
 ])
