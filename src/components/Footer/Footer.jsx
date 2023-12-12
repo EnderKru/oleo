@@ -11,6 +11,7 @@ export default function Footer() {
         <img src="./src/assets/фото/logo.png" alt="" className='logotip' />
         <div className='title-of-end'>
         Explore the World of Flavors!
+        
         </div>
         </div>
         <div className="subt">Copyright © 2010-2023 Oleo Company S.L. All rights reserved.</div>

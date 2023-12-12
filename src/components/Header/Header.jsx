@@ -13,6 +13,7 @@ function login() {
     alert('Войти');
 }
 
+
 // function scrollToTop(e) {
 //   e.preventDefault(); // Отмена дефолтного поведения
 //   window.scrollTo({
