@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&family=Roboto+Slab:wght@300&family=Tinos&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;600&family=Open+Sans&family=Roboto+Slab:wght@300&family=Tinos&display=swap');
+
+
+@media (max-width:1000px) {
+    .mallina {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        margin-top: 40px;
+        z-index: 1;
+    }
+
+    .banner-title {
+        margin: 0;
+        position: relative;
+        top: -50px;
+        z-index: 1000000;
+    }
+
+    .subtitle {
+        font-size: 20px;
+
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 18px 26px;
+        border: 2px solid #ffffff;
+        margin-left: -15px;
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .zaz {
+        margin-top: -160px;
+        z-index: 10;
+    }
+
+    .dish {
+        position: absolute;
+        left: 0;
+        width: 10%;
+        height: auto;
+    }
+
+    .food {
+        width: 78%;
+        height: auto;
+        margin-top: -99px;
+        margin-left: -20px;
+        margin-right: 18px;
+    }
+
+    .food-photo {
+        width: 60vh;
+        display: flex;
+        justify-content: right;
+        margin-left: 80px;
+        margin-top: 133px;
+
+
+
+    }
+
+    .banner-photo {
+        background-size: 350px;
+        background-position-y: center;
+        background-position-x: right;
+        display: flex;
+        justify-content: right;
+
+    }
+
+    .berries-1 {
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 180px;
+        margin-top: -30px;
+
+
+    }
+
+    .title span {
+        color: #ffffff;
+        border-bottom: none;
+    }
+
+    .rosberry {
+        width: 45vh;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-position-y: top;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        margin-top: 20px;
+    }
+
+    .card1 {
+        margin-top: 60px;
+    }
+
+    .title-of-categories,
+    .title-of-team {
+        font-size: 26px;
+    }
+
+    .subtitle-of-categories,
+    .subtitle-of-team {
+        font-size: 14px;
+    }
+
+    .zagol-of-button {
+        margin-top: -100px;
+        margin-left: 0px;
+    }
+
+    .container {
+        display: flex;
+        align-items: start;
+        overflow: hidden;
+        width: 100%;
+
+    }
+
+    .galerry {
+        overflow-x: auto;
+        white-space: nowrap;
+       
+    }
+
+    .zagol {
+        margin-left: -90px;
+        margin-bottom: 55px;
+        width: 200px;
+    }
+
+    .title-of-team::before {
+        width: 20%;
+
+    }
+
+    .button-of-categories {
+        padding: 10px 15px;
+        font-size: 24px;
+        margin-right: 20px;
+
+    }
+
+    .button-more {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .dudes {
+        width: 100%;
+        height: 800px;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        scroll-behavior: smooth;
+        margin-right: 30px;
+    }
+
+    .dudes::-webkit-scrollbar {
+        height: 1px;
+    }
+
+    .dudes img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Tilekmat {
+        margin-left: 469px;
+    }
+
+    .dudes::-webkit-scrollbar-thumb {
+        background-color: #888;
+    }
+
+    .our-team {
+        overflow: hidden;
+    }
+
+    .title-of-categories::before {
+        width: 40px;
+    }
+
+    .title-of-team::before {
+        content: '';
+        width: 9%;
+        display: block;
+        margin-left: 41px;
+        ;
+        position: relative;
+        top: 20px;
+
+    }
+
+    .zagol-of-team {
+        margin-left: 55px;
+        margin-top: 0;
+    }
+
+    .Myrza {
+        position: relative;
+        top: -1px;
+       
+    }
+
+    .bg-of-team img,
+    .bg-of-team {
+        display: none;
+    }
+
+    .dudes {
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+   .title-of-comments {
+       font-size: 26px;
+   }
+   .subtitle-of-comments {
+       font-size: 14px;
+   }
+   .message  {
+       width: 107%;
+       height: auto;
+   }
+   .kommenty {
+       display: flex;
+   }
+   .img-box {
+       display: inline-block;
+   }
+   .title-of-comments::before {
+       width: 53px;
+       position: relative;
+       right: 79px;
+       top: 28px;
+   }
+   .zagol-of-comments.show {
+    /* margin-top: -70px;
+    margin-left: -79px; */
+    transform: translateX(0);
+   }
+
+   
+   
+}
+@media (max-width:430px) {
+    .section1 {
+        padding-left: 30px;
+    }
+.button {
+    margin-left: 0px;
+}
+
+    .card1, .card2, .card3 {
+       width: 90%;
+       height: auto;
+       
+    }
+    .title-card1, .title-card2, .title-card3 {
+        font-size: 26px;
+        padding-right: 12px;
+    }
+    .subtitle-card1, .subtitle-card2, .subtitle-card3 {
+        font-size: 18px;
+        margin-bottom: 30px;
+        padding-right: 12px;
+    }
+    .pon {
+        width: 70%;
+        height: auto;
+    }
+    .laptop {
+        width: 50%;
+        height: auto;
+    }
+    .meal {
+        width: 30%;
+        height: auto;
+    }
+    .zagol {
+        margin-left:-120px;
+    }
+    .button-of-categories {
+        padding: 5px 7px;
+        font-size: 20px;
+        
+      
+    }
+  
+    .button-more {
+        margin-bottom: 100px;
+   
+    }
+    .img-box {
+        height: 50vh;
+        width: 9.4vh;
+        border-radius: 50px
+    }
+    .img-box:hover {
+        width: 170px;
+    }
+    .img-box h3 {
+        font-size: 25px;
+    }
+    .title-of-team {
+        margin-left: 0;
+    }
+    .title-of-team::before {
+       width: 17%;
+    }
+
+     .galerry div {
+        overflow-x: auto;
+        white-space: nowrap;
+     }
+     .gall {
+        display: inline-block;
+        
+     }
+     .galerry {
+        display: flex;
+        justify-content: center;
+     } 
+
+ .dudes {
+    height: auto;
+    margin-top: 50px;
+ }
+ .dudes img {
+    max-width: 50%;
+    max-height: 50%;
+ }
+ .Kutmansher:hover,
+ .Tilekmat:hover,
+ .Myrza:hover  {
+    transform: scale(1);
+ }
+ .our-team {
+    width: auto;
+ }
+ .Tilekmat {
+    margin-left: 170px;
+ }
+ .section5 {
+    margin-top: 200px;
+    height: auto;
+ }
+ .kommenty {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    scroll-behavior: smooth;
+    margin-right: 0;
+    margin-top: 60px;
+ }
+    .kommenty::-webkit-scrollbar {
+        height: 1px;
+    }
+
+    .box1 {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .kommenty::-webkit-scrollbar-thumb {
+        background-color: #888;
+    }
+
+    .testimonials {
+        overflow: hidden;
+        padding: 0;
+       
+    }
+
+    .kommenty::-webkit-scrollbar {
+        height: 1px;
+    }
+    .comment-1 {
+        margin-left: 400px;
+    }
+    .profile {
+        width: 50px;
+        height: auto;
+    }
+    .subtitle-of-team {
+        margin-left: 0;
+    }
+
+    .zagol-of-comments {
+        margin-left: 70px;
+    }
+    .section4 {
+        margin-top: 100px;
+    }
+}
+@media (min-width: 375px) {
+    .gall {
+        margin-left: 10px;
+    }
+}
+@media (min-width: 660px) { 
+
+    
+   .section1 {
+    margin-bottom: 100px;
+   }
+   
+}
