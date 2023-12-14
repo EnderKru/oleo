@@ -1,9 +1,11 @@
-import './mainPage.css'
-
 import React from 'react'
+import { PageTemplate } from '../../components/page-template'
+import {Section} from '../../components/Section/Section'
 
 export function MainPage() {
   return (
-    <div>MainPage</div>
+    <PageTemplate>
+      <Section />
+    </PageTemplate>
   )
 }

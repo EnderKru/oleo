@@ -4,7 +4,7 @@ import './Header.css'
 import '../Adaptive/Adap-header.css'
 
 
-export default function Header() {
+export function Header() {
   function register() {
     alert('Регистрация');
 }

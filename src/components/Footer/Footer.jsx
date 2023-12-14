@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css'
 import '../Adaptive/Adap-footer.css'
 
-export default function Footer() {
+export function Footer() {
   return (
     
     < div className="footer">
