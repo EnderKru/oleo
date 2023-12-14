@@ -1,14 +1,17 @@
+import Header from "../src/components/Header/Header"
+import Section from "../src/components/Section/Section"
+import Footer from "../src/components/Footer/Footer"
 
 
-import React, { useState } from 'react' 
-import {RouterProvider} from 'react-router-dom'
-import {router} from './app/index'
+function App() {
+  return (
+    <>
+    <Header/>
+     <Section/>
+     <Footer/>
+    </>
+  )
+}
 
-
-const App = () => {
- 
-    return <RouterProvider router={router} />
-  }
-  
-  export default App
+export default App
 
