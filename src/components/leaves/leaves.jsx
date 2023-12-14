@@ -1,11 +1,10 @@
-import '../leaves/leaves.css'
 
-const Leaves = ()=>{
+import "../leaves/leaves.css"
+
+export function Leaves (){
     return (
         <div className='background-leaves'>
             {}
         </div>
     )
 }
-
-export default Leaves

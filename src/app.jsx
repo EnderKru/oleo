@@ -1,18 +1,12 @@
-import React, { useState } from 'react' //какой то { useState }
-// import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Signup from "./pages/signupPage/signup.jsx"
-import Leaves from './components/leaves/leaves.jsx'
-import LoginPage from './pages/loginPage/loginPage.jsx'
 
-function App() {
-    return (
-    <div>
-        <div>
-            <Leaves />
-            <LoginPage />
-        </div>
-    </div>
-    )
-}
+import React, { useState } from 'react' 
+import {RouterProvider} from 'react-router-dom'
+import {router} from './app/index'
 
-export default App
+
+const App = () => {
+ 
+    return <RouterProvider router={router} />
+  }
+  
+  export default App

@@ -1,7 +1,7 @@
 .background-leaves{
     position: absolute;
     overflow: hidden;
-    background: url('/src/assets/images/листься.png') center center/cover no-repeat;
+    background: url('/src/assets/images/листься.svg') center center/cover no-repeat;
     animation: slideBackground 1s ease-in-out;
     height: 100%;
     width: 100%;

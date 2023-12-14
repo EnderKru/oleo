@@ -1,8 +1,8 @@
 
 .signup-main{
-    background-image: url(/src/assets/images/бг.png);
+    background-image: url(/src/assets/images/авторизация.svg);
     background-size: cover;
-    height:100%;
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;   
 }
@@ -115,7 +115,7 @@ input{
 
 .berrie{
     overflow: hidden;
-    background: url(/src/assets/images/вишня.png) center center/cover no-repeat;
+    background: url(/src/assets/images/вишня.svg) center center/cover no-repeat;
     animation: slideBackground 1s ease-in-out;
     width: 35vh;
     height: 35vh;
@@ -327,7 +327,8 @@ input{
         width: 15%;
     }
     .signup-main{
-        background-image: url(/src/assets/images/bg\ for\ phone.png);
+
+        background-image: url(/src/assets/images/bg\ phone\ signup.svg); 
         background-size: cover;
     }
     .conteiner-signup{

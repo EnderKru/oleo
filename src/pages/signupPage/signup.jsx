@@ -2,7 +2,7 @@ import '../signupPage/signup.css'
 import { useState } from 'react'
 // import confirmCod from '../components/corfirm_cod'
 
-function Signup() {
+export function SignupPage() {
     const [isSending, setSending] = useState(false)
 
     function send() {
@@ -47,4 +47,3 @@ function Signup() {
         </div>
     </div>
 }
-export default Signup
