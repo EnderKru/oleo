@@ -7,7 +7,9 @@
     background-repeat: no-repeat;   
 }
 .logo{
+    position: relative;
     padding: 10px;
+    z-index: 13;
 }
 .conteiner-signup{
     display: flex;
@@ -324,7 +326,7 @@ input{
 }
 @media screen and (max-width:769px) {
     .logo{
-        width: 15%;
+        width: 20%;
     }
     .signup-main{
 

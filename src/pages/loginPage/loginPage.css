@@ -298,7 +298,7 @@ input{
 }
 @media screen and (max-width:769px) {
     .logo{
-        width: 15%;
+        width: 20%;
     }
     .login{
         background-image: url(/src/assets/images/phone\ log\ in.svg);

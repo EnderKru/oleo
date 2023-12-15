@@ -5,7 +5,7 @@ import '../loginPage/loginPage.css'
 export function LoginPage() {
   return (
     <div className='login'>
-        <img src="/src/assets/images/logo.svg" alt="logo" className="logo" />
+        <a href='/'><img src="/src/assets/images/logo.svg" alt="logo" className="logo" /></a>
         <div className="conteiner-login">
         <div class="login-box">
             <div class="login-task">
@@ -25,9 +25,9 @@ export function LoginPage() {
                 <div class="appetit"> Bon appetit </div>
             </div>
             <div class="have-acc">
-                Don't have an account? <a href="a"> Sign Up</a>
+                Don't have an account? <a href="/registration"> Sign Up</a>
             </div>
-                <a class="forgot-password" href="@">Forgot password?</a>
+                <a class="forgot-password" href="/reset-password">Forgot password?</a>
             </div>
             <div className="berrie">
             </div>

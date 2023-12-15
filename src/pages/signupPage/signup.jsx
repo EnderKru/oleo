@@ -11,7 +11,7 @@ export function SignupPage() {
     }
     return <div className = "signup-main">
                 <div className='signup'>
-                    <img src="/src/assets/images/logo.svg" alt="logo" className="logo" />
+                    <a href='/'><img src="/src/assets/images/logo.svg" alt="logo" className="logo" /></a>
                     <div className="conteiner-signup">
                         <div className="box-signup">
                             <div className="signup-task">
@@ -38,9 +38,8 @@ export function SignupPage() {
                                 <div className="appetit"> Bon appetit </div>
                             </div>
                             <div className="have-acc">
-                                Already have an account? <a href="a"> LOG IN</a>
+                                Already have an account? <a href="/login"> LOG IN</a>
                             </div>
-                            {!isSending && (<a className="forgot-password" href="@">Forgot password?</a>)}
                             </div>
             </div>
         </div>
