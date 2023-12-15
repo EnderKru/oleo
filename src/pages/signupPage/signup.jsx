@@ -28,7 +28,7 @@ export function SignupPage() {
                                 {!isSending && (<input type="password" name="user-password" placeholder="Create password"></input>)}
                                 {!isSending && (<input type="text" name="confirm-password" placeholder="Confirm password"></input>)}
                             </div>
-                            <div className="btn">
+                            <div className="btns">
                                 {!isSending && (<button type='button' onClick={send} id="get-code"> Get Code</button>)}
                                 {isSending && (<button type='button' id="Cook"> Cook</button> )}
                                 {/* <Component send={[isSending, setSending]}/> */}

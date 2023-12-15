@@ -18,7 +18,7 @@ export function LoginPage() {
                 <input type="email" name="email" placeholder="Enter email"></input>
                 <input type="password" name="email-password" placeholder="Enter email password" ></input>
             </div>
-            <div class="button">
+            <div class="btns">
                 <button class="cook"> Cook </button> 
                 <div class="appetit"> Bon appetit </div>
             </div>
