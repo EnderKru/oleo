@@ -1,3 +1,4 @@
+import { CookButton } from '../../components/cook-button/cookButton'
 import '../signupPage/signup.css'
 import { useState } from 'react'
 // import confirmCod from '../components/corfirm_cod'
@@ -30,7 +31,9 @@ export function SignupPage() {
                             </div>
                             <div className="btns">
                                 {!isSending && (<button type='button' onClick={send} id="get-code"> Get Code</button>)}
-                                {isSending && (<button type='button' id="Cook"> Cook</button> )}
+                                {isSending && (<>
+                                                <CookButton/>
+                                                </> )}
                                 {/* <Component send={[isSending, setSending]}/> */}
                                 <div className="appetit"> Bon appetit </div>
                             </div>

@@ -1,3 +1,4 @@
+import {CookButton} from '../../components/cook-button/cookButton'
 import '../loginPage/loginPage.css'
 
 
@@ -5,6 +6,7 @@ export function LoginPage() {
   return (
     <div className='login'>
         <img src="/src/assets/images/logo.svg" alt="logo" className="logo" />
+        <div className="conteiner-login">
         <div class="login-box">
             <div class="login-task">
                 LOG IN
@@ -19,7 +21,7 @@ export function LoginPage() {
                 <input type="password" name="email-password" placeholder="Enter email password" ></input>
             </div>
             <div class="btns">
-                <button class="cook"> Cook </button> 
+                <CookButton /> 
                 <div class="appetit"> Bon appetit </div>
             </div>
             <div class="have-acc">
@@ -29,6 +31,8 @@ export function LoginPage() {
             </div>
             <div className="berrie">
             </div>
+        </div>
+        
     </div>
   )
 }
