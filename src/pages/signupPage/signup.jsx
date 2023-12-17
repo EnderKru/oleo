@@ -1,7 +1,6 @@
 import { CookButton } from '../../components/cook-button/cookButton'
 import '../signupPage/signup.css'
 import { useState } from 'react'
-import {Navlink} from "react-router-dom"
 // import confirmCod from '../components/corfirm_cod'
 
 export function SignupPage() {
@@ -39,10 +38,7 @@ export function SignupPage() {
                                 <div className="appetit"> Bon appetit </div>
                             </div>
                             <div className="have-acc">
-                                Already have an account? 
-                                <Navlink to="/login">
-                                <a> LOG IN</a>
-                                </Navlink>
+                                Already have an account? <a href="/login"> LOG IN</a>
                             </div>
                             </div>
             </div>
