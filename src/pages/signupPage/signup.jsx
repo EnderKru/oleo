@@ -1,3 +1,4 @@
+import { CookButton } from '../../components/cook-button/cookButton'
 import '../signupPage/signup.css'
 import { useState } from 'react'
 // import confirmCod from '../components/corfirm_cod'
@@ -10,7 +11,7 @@ export function SignupPage() {
     }
     return <div className = "signup-main">
                 <div className='signup'>
-                    <img src="/src/assets/images/logo.svg" alt="logo" className="logo" />
+                    <a href='/'><img src="/src/assets/images/logo.svg" alt="logo" className="logo" /></a>
                     <div className="conteiner-signup">
                         <div className="box-signup">
                             <div className="signup-task">
@@ -30,14 +31,15 @@ export function SignupPage() {
                             </div>
                             <div className="btns">
                                 {!isSending && (<button type='button' onClick={send} id="get-code"> Get Code</button>)}
-                                {isSending && (<button type='button' id="Cook"> Cook</button> )}
+                                {isSending && (<>
+                                                <CookButton/>
+                                                </> )}
                                 {/* <Component send={[isSending, setSending]}/> */}
                                 <div className="appetit"> Bon appetit </div>
                             </div>
                             <div className="have-acc">
-                                Already have an account? <a href="a"> LOG IN</a>
+                                Already have an account? <a href="/login"> LOG IN</a>
                             </div>
-                            {!isSending && (<a className="forgot-password" href="@">Forgot password?</a>)}
                             </div>
             </div>
         </div>

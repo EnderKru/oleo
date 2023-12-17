@@ -7,7 +7,9 @@
     background-repeat: no-repeat;   
 }
 .logo{
+    position: relative;
     padding: 10px;
+    z-index: 13;
 }
 .conteiner-signup{
     display: flex;
@@ -49,9 +51,9 @@ input{
     background-color: #0B0B0B;
     border-radius: 50px;
     padding: 20px;
-    z-index: 11;
+    z-index: 12;
 }
-#Cook, #get-code{
+#get-code{
     border-radius: 13px;
     background: var(--accent-color);
     padding: 12px 25px;
@@ -159,7 +161,7 @@ input{
         font-size: 30px;
         padding: 15px;
     }
-    #Cook, #get-code{
+    #get-code{
         font-size: 32px;
     }
     .appetit{
@@ -195,7 +197,7 @@ input{
         font-size: 20px;
         padding: 12px;
     }
-    #Cook, #get-code{
+    #get-code{
         font-size: 28px;
     }
     .appetit{
@@ -237,7 +239,7 @@ input{
     .input-box{
         width: 380px;
     }
-    #Cook, #get-code{
+    #get-code{
         font-size: 20px;
     }
     .appetit{
@@ -270,7 +272,7 @@ input{
         padding: 5px 15px;
         row-gap: 0;
     }
-    #Cook, #get-code{
+    #get-code{
         font-size: 18px;
         padding: 10px 15px;
     }
@@ -304,7 +306,7 @@ input{
     .input-box{
         width: 300px;
     }
-    #Cook, #get-code{
+    #get-code{
         font-size: 14px;
         padding: 10px 15px;
         border-radius: 10px;
@@ -324,7 +326,7 @@ input{
 }
 @media screen and (max-width:769px) {
     .logo{
-        width: 15%;
+        width: 20%;
     }
     .signup-main{
 
@@ -351,7 +353,7 @@ input{
     .input-box{
         width: 320px;
     }
-    #Cook, #get-code{
+    #get-code{
         font-size: 15px;
     }
     .appetit{

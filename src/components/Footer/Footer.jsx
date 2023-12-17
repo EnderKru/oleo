@@ -14,7 +14,6 @@ export function Footer() {
         
         </div>
         </div>
-        <div className="subt">Copyright © 2010-2023 Oleo Company S.L. All rights reserved.</div>
         <div className="contacts">
           <div className="title-of-contacts">
             CONTACT US
@@ -34,6 +33,7 @@ export function Footer() {
           </div>
         </div>
       </div>
+      <div className="subt">Copyright © 2010-2023 Oleo Company S.L. All rights reserved.</div>
     </div>
     
   )
