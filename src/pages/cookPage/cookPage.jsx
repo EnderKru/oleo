@@ -184,7 +184,7 @@ export function CookPage() {
             </div>
             <div className="knife-cook">
               <img src="./src/assets/фото/Knife-PNG 1.png" className='knife' alt="" />
-            </div>
+            </div>  
           </div>
 
           <div className="right">
