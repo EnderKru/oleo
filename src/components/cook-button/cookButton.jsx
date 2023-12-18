@@ -1,12 +1,9 @@
-import {Link} from 'react-router-dom'
-export function cookButton() {
+import {NavLink} from 'react-router-dom'
+import classes from '../cook-button/cook-Button.module.css'
+export function CookButton() {
   return (
-    
-    <div>
-        <style>
-            .cook
-        </style>
-        <div className="cook-btn">Cook</div> 
-    </div>
-  )
+      <NavLink to='/'>
+        <button className={classes.btn}>Cook</button> 
+      </NavLink>
+  ) 
 }

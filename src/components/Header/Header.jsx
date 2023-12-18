@@ -1,17 +1,11 @@
-
+import {NavLink} from 'react-router-dom'
 import React from 'react'
 import './Header.css'
 import '../Adaptive/Adap-header.css'
 
 
 export function Header() {
-  function register() {
-    alert('Регистрация');
-}
 
-function login() {
-    alert('Войти');
-}
 
 
 // function scrollToTop(e) {
@@ -39,21 +33,29 @@ function scrollToTop() {
     <div className="header">
 <div>
   <div className="logo">
-    <img src="./src/assets/фото/logo.png" alt="" className='main-logo' />
+    <img  src="./src/assets/фото/logo.png" alt="" className='main-logo'  />
   </div>
   <div className="navbar">
   <a href="#" onClick={scrollToTop} className='header-button'>Home</a>
 
     {/* <button  id="scrollToTop" onClick={scrollToTop} className='header-button'>Home</button> */}
+    <NavLink to='/cook'>
     <a href="" className='header-button'>Cook</a>
+    </NavLink>
+    <NavLink to='/categories'>
     <a href="" className='header-button'>Categories</a>
+    </NavLink>
     <a href="" className='header-button'>About us</a>
     <a href="" className='header-button'>Comments</a>
      <div className="custom-tooltip">
             <img src="../src/assets/фото/image 8person.png" alt="Mini Photo" className="mini-photo" id="person" />
             <div className="tooltiptext">
-              <a href='' className='sign-up'onClick={register}>sign up</a>
-              <a href='' className='log-in'onClick={login}>log in</a>
+              <NavLink to='/registration'>
+              <a href='' className='sign-up'>sign up</a>
+              </NavLink>
+              <NavLink to='/login'>
+              <a href='' className='log-in'>log in</a>
+              </NavLink>
             </div>
           </div>
      </div>

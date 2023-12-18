@@ -1,6 +1,7 @@
 import React from 'react'
 import './Section.css'
 import '../Adaptive/Adap-section.css'
+import { NavLink } from 'react-router-dom';
 
 export function Section() {
 
@@ -63,9 +64,11 @@ window.addEventListener('scroll', () => {
               <div className="title">
                 Find and <span>Cook</span>
               </div>
+              <NavLink to='/cook'>
               <div className="button">
                 Go to cooking
               </div>
+              </NavLink>
             </div>
             <div className="bg-of-banner">
               <img src="./src/assets/фото/Frame 3.png" alt="" className='mallina'  />
@@ -125,7 +128,9 @@ window.addEventListener('scroll', () => {
                         </div>
                     </div>
                   <div className="button-more">
+                    <NavLink to='/categories'>
                     <a href="" className='button-of-categories'>More</a>
+                    </NavLink>
                     </div>
                     </div>
 
