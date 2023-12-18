@@ -2,15 +2,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;600&family=Open+Sans&family=Roboto+Slab:wght@300&family=Tinos&display=swap');
 
 
- body {
-     background-color: black;
-     margin: 0;
-     padding: 0;
-     color: #ffffff;
-     font-family: 'Montserrat', sans-serif;
-     /* overflow: hidden; */
- }
-
  .subtitle {
      font-family: 'Montserrat', sans-serif;
      font-size: 37px;

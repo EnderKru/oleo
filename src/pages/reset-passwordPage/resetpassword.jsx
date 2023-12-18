@@ -1,5 +1,6 @@
 import '../reset-passwordPage/resetpassword.css'
 import { useState } from 'react'
+import { CookButton } from '../../components/cook-button/cookButton'
 
 export function ResetPasswordPage() {
     const [isSending, setSending] = useState(false)
@@ -9,7 +10,7 @@ export function ResetPasswordPage() {
     }
   return (
     <div className='reset'>
-        <img src="/src/assets/images/logo.svg" alt="logo" className="logo" />
+        <a href='/'><img src="/src/assets/images/logo.svg" alt="logo" className="logo" /></a>
         <div className="reset-conteiner">
         <div className="reset-box">
         <div class="reset-task">
@@ -25,8 +26,7 @@ export function ResetPasswordPage() {
             </div>
             <div className="btn">
                 {!isSending && (<button type='button' onClick={send} id="get-code"> Get Code</button>)}
-                {isSending && (<button type='button' id="Cook"> Cook</button> )}
-                {/* <Component send={[isSending, setSending]}/> */}
+                {isSending && (<><CookButton/></>)}
                 <div className="appetit"> Bon appetit </div>
             </div>  
         </div>

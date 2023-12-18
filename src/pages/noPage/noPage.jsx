@@ -1,6 +1,8 @@
 import "../noPage/noPage.css"
 export function NoPage() {
     return(
+        <>
+        <a href='/'><img src="/src/assets/images/logo.svg" alt="logo" className="logo" /></a>
         <div className="no-page-body">
             <div className="error">
                 Oops, We can't find that page... Oops, We can't find that page... Oops, We can't find that page...
@@ -12,5 +14,7 @@ export function NoPage() {
                 Oops, We can't find that page... Oops, We can't find that page... Oops, We can't find that page...
             </div>
         </div>
+        </>
+        
     )
 }
