@@ -32,14 +32,14 @@
     font-size: 26px;
     white-space: nowrap; 
     overflow: hidden;   
-    animation: moveRightToLeft 15s linear infinite;
+    animation: moveRightToLeft 10s linear infinite;
 }
 @keyframes moveRightToLeft {
     from {
-      transform: translateX(100%);
+      transform: translateX(0%);
     }
     to {
-      transform: translateX(-100%);
+      transform: translateX(-10%)
     }
   }
 
