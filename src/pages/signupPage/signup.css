@@ -8,14 +8,14 @@
 }
 .logo{
     position: relative;
-    padding: 10px;
+    padding: 20px;
     z-index: 13;
 }
 .conteiner-signup{
     display: flex;
     align-items: center;
-    margin-left: 6%;
-    margin-top: 2%
+    height: 100%;
+    margin-left: 100px;
 }
 .signup-task{
     font-size: 30px;
@@ -139,50 +139,9 @@ input{
     }
   }
 
-@media screen and (min-width: 1680px) {
-    .conteiner-signup{
-        margin-left: 8%;
-        margin-top: 1%;
-    }
-    .logo{
-        width: 15%;
-    }
-    .box-signup{
-        padding: 40px;
-    }
-    .signup-task{
-        font-size: 45px;
-    }
-    .input-box{
-        width: 500px;
-        row-gap: 10px;
-    }
-    input{
-        font-size: 30px;
-        padding: 15px;
-    }
-    #get-code{
-        font-size: 32px;
-    }
-    .appetit{
-        font-size: 32px;
-    }
-    .have-acc{
-        font-size: 24px;
-        margin-top: 30px;
-    }
-    .have-acc a{
-        font-size: 32px;
-    }
-    .forgot-password{
-        font-size: 24px;
-    }
-}
+
 @media screen and (max-width: 1680px) {
-    .conteiner-signup{
-        margin-left: 8%;
-        margin-top: 1.5%;
-    }
+
     .box-signup{
         padding: 30px;
     }
@@ -256,75 +215,16 @@ input{
         font-size: 14px;
     }
 }
-@media screen and (max-width: 1240px) {
-    .box-signup{
-        padding: 10px;
-    }
-    .signup-task{
-        font-size: 20px;
-        margin-top: 10px;
-    }
-    input{
-        font-size: 16px;
-    }
-    .input-box{
-        width: 320px;
-        padding: 5px 15px;
-        row-gap: 0;
-    }
-    #get-code{
-        font-size: 18px;
-        padding: 10px 15px;
-    }
-    .appetit{
-        font-size: 18px;
-    }
-    .have-acc{
-        font-size: 14px;
-        margin-top: 20px;
-    }
-    .have-acc a{
-        font-size: 16px;
-        margin-top: 0px;
-    }
-    .forgot-password{
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 1000px) {
+@media screen and (max-width:1000px){
     .logo{
-        width: 12%;
-    }
-    .box-signup{
-        padding: 5px;
-    }
-    input{
-        font-size: 14px;
+        width: 20%;
         padding: 10px;
-        border-radius: 5px;
-    }
-    .input-box{
-        width: 300px;
-    }
-    #get-code{
-        font-size: 14px;
-        padding: 10px 15px;
-        border-radius: 10px;
-    }
-    .appetit{
-        font-size: 14px;
-    }
-    .have-acc{
-        font-size: 12px;
-    }
-    .have-acc a{
-        font-size: 13px;
-    }
-    .forgot-password{
-        font-size: 12px;
     }
 }
 @media screen and (max-width:769px) {
+    .signup{
+        height: 100%;
+    }
     .logo{
         width: 20%;
     }
@@ -336,6 +236,7 @@ input{
     .conteiner-signup{
         justify-content: center;
         align-items: center;
+        height: 100%;
         margin-left: 0;
         margin-top: 0;
     }

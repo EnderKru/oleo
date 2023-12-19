@@ -9,10 +9,13 @@
 .logo{
     padding: 10px;
 }
-.login-box{
+.conteiner-login{
+    height: 100%;
+    display: block;
     align-items: center;
-    margin-left: 8%;
-    margin-top: 2%;
+}
+.login-box{
+    margin-left: 100%;
 }
 .login-task{
     font-size: 30px;
@@ -65,7 +68,7 @@ input{
     position: relative;
     width:fit-content;
     background-color: #0B0B0B;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 20px;
     z-index: 12;
 }
@@ -133,75 +136,17 @@ input{
       transform: translateX(0%);
     }
   }
-  @media screen and (min-width: 1680px) {
-    .logo{
-        width: 15%;
-    }
+@media screen and (min-width: 1530px){
     .login-box{
-        padding: 40px;
-        margin-left: 8%;
-        margin-top: 1%;
-    }
-    .login-task{
-        font-size: 45px;
-    }
-    .input-box{
-        width: 500px;
-        row-gap: 10px;
-    }
-    input{
-        font-size: 30px;
-        padding: 15px;
-    }
-    .appetit{
-        font-size: 32px;
-    }
-    .have-acc{
-        font-size: 24px;
-        margin-top: 30px;
-    }
-    .have-acc a{
-        font-size: 32px;
-    }
-    .forgot-password{
-        font-size: 24px;
+        margin-left: 100px;
     }
 }
-@media screen and (max-width: 1680px) {
-    .login-box{
-        padding: 30px;
-        margin-left: 8%;
-        margin-top: 1.5%;
-    }
-    .login-task{
-        font-size: 30px;
-    }
-    .input-box{
-        width: 450px;
-        row-gap: 6px;
-    }
-    input{
-        font-size: 20px;
-        padding: 12px;
-    }
-    .appetit{
-        font-size: 28px;
-    }
-    .have-acc{
-        font-size: 20px;
-        margin-top: 30px;
-    }
-    .have-acc a{
-        font-size: 27px;
-    }
-    .forgot-password{
-        font-size: 20px;
-    }
-}
+
 @media screen and (max-width: 1530px) {
 
     .login-box{
         padding: 20px;
+        margin-left: 100px;
     }
     input{
         font-size: 24px;
@@ -297,6 +242,12 @@ input{
     }
 }
 @media screen and (max-width:769px) {
+    .conteiner-login{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .logo{
         width: 20%;
     }
