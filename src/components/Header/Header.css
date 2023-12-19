@@ -43,14 +43,14 @@
 .header div {
     display: flex;
     justify-content: space-between;
-   
+    margin-top: -4px;
     z-index: 1000;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     margin-left: 17em;
 }
 
@@ -157,7 +157,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #ffffff;
     border-radius: 89px;
-    padding: 10px 15px;
+    padding: 10px 24px;
     position: relative;
     font-weight: lighter;
     transition: all 0.5s ease;
@@ -172,7 +172,7 @@ body {
     height: 4px;
     background-color: rgb(255, 255, 255);
     position: relative;
-    top: 7px;
+    top: -2px;
     transition: all 0.4s ease-in-out; 
     z-index: 1;
     border-radius: 4px
@@ -257,7 +257,10 @@ body {
     opacity: 0;
     transition: opacity 0.3s;
   }
-  
+ #about-us {
+    width: max-content;
+ } 
+
 
   .menu:hover .menutext {
     visibility: visible;
@@ -267,4 +270,8 @@ body {
 .menutext {
     display: flex;
     flex-direction: column;
+}
+.logo {
+    position: absolute;
+    
 }
