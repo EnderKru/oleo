@@ -2,14 +2,7 @@ import "../cookPage/cookPage.css";
 import React, { useState, useEffect } from "react";
 
 export function CookPage() {
-  function register() {
-    alert("Регистрация");
-  }
-
-  function login() {
-    alert("Войти");
-  }
-
+  
   const [preferences, setPreferences] = useState({
     taste: "",
     allergies: "",
@@ -104,10 +97,10 @@ export function CookPage() {
               id="person-cook"
             />
             <div className="tooltiptext-cook">
-              <a href="http://localhost:5173/registration" className="sign-up-cook" onClick={register}>
+              <a href="http://localhost:5173/registration" className="sign-up-cook" >
                 sign up
               </a>
-              <a href="http://localhost:5173/login" className="log-in-cook" onClick={login}>
+              <a href="http://localhost:5173/login" className="log-in-cook" >
                 log in
               </a>
             </div>
