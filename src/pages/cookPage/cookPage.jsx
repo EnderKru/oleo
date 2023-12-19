@@ -88,9 +88,9 @@ export function CookPage() {
 
   return (
       <div className="cook-page">
-        <header>
+        <div>
           <CookHeader/>  
-        </header>
+        </div>
 
         <div className="container-cook">
           <div className="left">

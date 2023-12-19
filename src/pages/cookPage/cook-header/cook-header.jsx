@@ -4,6 +4,7 @@ export function CookHeader(){
     return(
         <header>
             <div style={{
+                width: "100%",
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center'
