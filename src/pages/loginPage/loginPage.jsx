@@ -1,8 +1,38 @@
 import {CookButton} from '../../components/cook-button/cookButton'
 import '../loginPage/loginPage.css'
+import { useState } from 'react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 
 export function LoginPage() {
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
+    const navigate = useNavigate()
+
+    function setInputUsername(event) {
+        console.log(event)
+        setUsername(event.target.value)
+    }
+
+    function setInputPassword(event) {
+        setPassword(event.target.value)
+    }
+
+    function loginUser(event) {
+        event.preventDefault();
+        const data = {
+            username: username,
+            password: password
+          };
+
+          axios.post("http://85.209.9.201/api/v1/auth/login/", data).then((response) => {
+            navigate('/')
+          }).catch(e => {
+            alert(e)
+          });
+    }
+
   return (
     <div className='login'>
         <a href='/'><img src="/src/assets/images/logo.svg" alt="logo" className="logo" /></a>
@@ -12,8 +42,8 @@ export function LoginPage() {
                 LOG IN
             </div>
             <div class="input-box">
-                <input type="text" name="username" placeholder="Enter Username"></input>
-                <input type="password" name="user-password" placeholder="Enter password"></input>
+                <input onChange={setInputUsername} type="text" name="username" placeholder="Enter Username"></input>
+                <input onChange={setInputPassword} type="password" name="user-password" placeholder="Enter password"></input>
                 <div class="or">
                     OR
                 </div>
@@ -21,7 +51,9 @@ export function LoginPage() {
                 <input type="password" name="email-password" placeholder="Enter email password" ></input>
             </div>
             <div class="btns">
-                <CookButton /> 
+                <span onClick={loginUser}>
+                    <CookButton />
+                </span> 
                 <div class="appetit"> Bon appetit </div>
             </div>
             <div class="have-acc">
@@ -32,7 +64,6 @@ export function LoginPage() {
             <div className="berrie">
             </div>
         </div>
-        
     </div>
   )
 }
