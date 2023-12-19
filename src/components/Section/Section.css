@@ -13,21 +13,41 @@
      z-index: 1000;
 
  }
-
  .title {
-     font-family: 'Open Sans Hebrew', sans-serif;
-     font-size: 100px;
-     color: white;
-     font-weight: bold;
-     margin-right: 0px;
-
- }
-
- .title span {
-     color: #FFDC33;
-     border-bottom: 4px solid;
-
- }
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    margin-right: 0px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .title span {
+    position: relative;
+    z-index: 2;
+    color: #FFDC33;
+  }
+  
+  .title span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFDC33;
+    animation: slideIn 1s forwards;
+    animation-delay: 1s;
+    z-index: 1;
+  }
+  
+  @keyframes slideIn {
+    to {
+      width: 100%;
+    }
+  }
+  
 
  .button {
      display: inline-block;
@@ -45,6 +65,7 @@
      transition: color 0.5s ease, box-shadow 0.3s ease;
      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
      margin-top: 60px;
+     cursor: pointer;
 
  }
 
@@ -226,7 +247,7 @@
      font-weight: bold;
      font-family: 'Open Sans', sans-serif;
      position: relative;
-     top: -77px;
+     top: -40px;
      margin-left: 34px;
 
  }
@@ -235,7 +256,7 @@
      font-size: 22px;
      font-family: 'Montserrat', sans-serif;
      margin-left: 34px;
-     margin-top: -75px;
+     margin-top: -1px;
      font-weight: lighter;
 
 
@@ -245,7 +266,7 @@
      font-size: 22px;
      font-family: 'Montserrat', sans-serif;
      margin-left: 34px;
-     margin-top: -45px;
+     margin-top: 25px;
      font-weight: lighter;
 
  }
@@ -264,7 +285,7 @@
      font-weight: bold;
      font-family: 'Open Sans', sans-serif;
      position: relative;
-     top: -50px;
+     top: -12px;
      margin-left: 34px;
 
  }
@@ -347,6 +368,7 @@
      margin-top: -40em;
 
  }
+ 
 
  .galerry {
      display: flex;
@@ -373,6 +395,19 @@
      background-position: center;
      transition: 0.5s;
      z-index: 10;
+
+ }
+ .img-box::before {
+     content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 20px;
  }
 
  .img-box:nth-child(2) {
@@ -419,6 +454,7 @@
      font-size: 35px;
      opacity: 0;
      transition: top 0.5s, opacity 0.5s;
+     
 
  }
 
@@ -435,6 +471,7 @@
 
  h3 {
      filter: brightness(0.7);
+     margin-top: 12px;
  }
 
  .galerry-wrap {
@@ -443,6 +480,7 @@
      justify-content: center;
      margin: 10% auto;
  }
+ 
 
 
  .raspberry {

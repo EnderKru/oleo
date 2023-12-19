@@ -1,6 +1,7 @@
 import React from 'react'
 import './Section.css'
 import '../Adaptive/Adap-section.css'
+// import '../Header/BurgerMenu/BurgerMenu.jsx'
 import { NavLink } from 'react-router-dom';
 
 export function Section() {
@@ -138,12 +139,14 @@ window.addEventListener('scroll', () => {
 
                 <div/>
                 <div className='container'>
-                    <a href='http://localhost:5174'>
+                    <a href='http://localhost:5173/cook'>
                         <div className="galerry-wrap">
-
+                        <div className="dark-overlay"></div> 
                             < div className="galerry" >
                                 <div>
+                                    
                                 <div className="gall">
+                                    
                                     <div className="img-box"><h3>Breakfast</h3></div>
                                     <div className="img-box"><h3>Lunch</h3></div>
                                     <div className="img-box"><h3>Dinner</h3></div>
@@ -151,7 +154,7 @@ window.addEventListener('scroll', () => {
                                     <div className="img-box"><h3>Drinks</h3></div>
                                 </div>
                                 </div>
-
+ 
 
                             </div>
                         </div>

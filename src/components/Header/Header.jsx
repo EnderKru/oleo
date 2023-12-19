@@ -45,7 +45,7 @@ function scrollToTop() {
     <NavLink to='/categories'>
     <a href="" className='header-button'>Categories</a>
     </NavLink>
-    <a href="" className='header-button'>About us</a>
+    <a href="" className='header-button' id='about-us'>About us</a>
     <a href="" className='header-button'>Comments</a>
      <div className="custom-tooltip">
             <img src="../src/assets/фото/image 8person.png" alt="Mini Photo" className="mini-photo" id="person" />
