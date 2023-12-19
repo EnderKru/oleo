@@ -1,5 +1,7 @@
+import { NavLink } from "react-router-dom";
 import "../cookPage/cookPage.css";
 import React, { useState, useEffect } from "react";
+import { CookHeader } from "./cook-header/cook-header";
 
 export function CookPage() {
   
@@ -85,26 +87,9 @@ export function CookPage() {
   };
 
   return (
-    <div>
       <div className="cook-page">
         <header>
-          <img src="./src/assets/фото/logo.png" className="logo-cook" alt="Logo" />
-          <div className="custom-tooltip-cook">
-            <img
-              src="../src/assets/фото/image 8person.png"
-              alt="Mini Photo"
-              className="mini-photo-cook"
-              id="person-cook"
-            />
-            <div className="tooltiptext-cook">
-              <a href="http://localhost:5173/registration" className="sign-up-cook" >
-                sign up
-              </a>
-              <a href="http://localhost:5173/login" className="log-in-cook" >
-                log in
-              </a>
-            </div>
-          </div>
+          <CookHeader/>  
         </header>
 
         <div className="container-cook">
@@ -214,6 +199,5 @@ export function CookPage() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
