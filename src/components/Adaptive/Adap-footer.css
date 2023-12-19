@@ -24,6 +24,7 @@
     }
     .number-of-phone, .email-of-ender, .alatoo-loc {
         font-size: 15px;
+        cursor: pointer;
     }
     .numb {
         width: 5%;
