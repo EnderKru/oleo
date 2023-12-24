@@ -2,10 +2,11 @@ import {NavLink} from 'react-router-dom'
 import React from 'react'
 import './Header.css'
 import '../Adaptive/Adap-header.css'
+import { UserContext } from '../../app'
 
 
 export function Header() {
-
+  const [user, setUser] = React.useContext(UserContext)
 
 
 // function scrollToTop(e) {
@@ -49,14 +50,23 @@ function scrollToTop() {
     <a href="" className='header-button'>Comments</a>
      <div className="custom-tooltip">
             <img src="../src/assets/фото/image 8person.png" alt="Mini Photo" className="mini-photo" id="person" />
-            <div className="tooltiptext">
-              <NavLink to='/registration'>
-              <a href='' className='sign-up'>sign up</a>
-              </NavLink>
-              <NavLink to='/login'>
-              <a href='' className='log-in'>log in</a>
-              </NavLink>
-            </div>
+            {user ? (
+              <div className="tooltiptext">
+                <NavLink to='/registration'>
+                  <a href='' className='sign-up'>log out</a>
+                </NavLink>
+              </div>
+            ) : (
+              <div className="tooltiptext">
+                <NavLink to='/registration'>
+                <a href='' className='sign-up'>sign up</a>
+                </NavLink>
+                <NavLink to='/login'>
+                <a href='' className='log-in'>log in</a>
+                </NavLink>
+              </div>
+            )}
+            
           </div>
      </div>
 
