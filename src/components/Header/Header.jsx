@@ -2,7 +2,7 @@ import {NavLink} from 'react-router-dom'
 import React from 'react'
 import './Header.css'
 import '../Adaptive/Adap-header.css'
-import { UserContext } from '../../app'
+// import { UserContext } from '../../app'
 
 
 export function Header() {

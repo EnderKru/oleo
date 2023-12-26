@@ -26,7 +26,7 @@ export function LoginPage() {
             password: password
           };
 
-          axios.post("http://85.209.9.е201/api/v1/auth/login/", data).then((response) => {
+          axios.post("http://85.209.9.201/api/v1/auth/login/ ", data).then((response) => {
             navigate('/')
           }).catch(e => {
             alert(e)
@@ -44,11 +44,6 @@ export function LoginPage() {
             <div class="input-box">
                 <input onChange={setInputUsername} type="text" name="username" placeholder="Enter Username"></input>
                 <input onChange={setInputPassword} type="password" name="user-password" placeholder="Enter password"></input>
-                <div class="or">
-                    OR
-                </div>
-                <input type="email" name="email" placeholder="Enter email"></input>
-                <input type="password" name="email-password" placeholder="Enter email password" ></input>
             </div>
             <div class="btns">
                 <span onClick={loginUser}>
