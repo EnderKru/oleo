@@ -7,16 +7,16 @@ import axios from 'axios'
 export function SignupPage() {
     const [isSending, setSending] = useState(false)
 
-    constructor(props); {
-        super(props)
-        state = {
-            password: "",
-            password_confirm: "",
-            first_name: "",
-            username: "",
-            email: ""
-        } 
-    }
+    // constructor(props); {
+    //     super(props)
+    //     state = {
+    //         password: "",
+    //         password_confirm: "",
+    //         first_name: "",
+    //         username: "",
+    //         email: ""
+    //     } 
+    // }
 
     function send() {
         setSending(true)
