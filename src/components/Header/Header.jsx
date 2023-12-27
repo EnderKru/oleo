@@ -52,7 +52,10 @@ function scrollToTop() {
             <img src="../src/assets/фото/image 8person.png" alt="Mini Photo" className="mini-photo" id="person" />
             {user ? (
               <div className="tooltiptext">
-                <NavLink to='/registration'>
+                <NavLink to='/profile'>
+                <a href='' className='sign-up'>profile</a>
+                </NavLink>
+                <NavLink to='/'>
                   <a href='' className='sign-up'>log out</a>
                 </NavLink>
               </div>

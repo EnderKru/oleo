@@ -4,7 +4,7 @@ import React,{ useState, createContext} from 'react'
 export const UserContext = createContext()
 
 const App = () => {
-  const [user, setUser] = useState(false)
+  const [user, setUser] = useState(true)
 
     return( 
       <UserContext.Provider value={[user, setUser]}>

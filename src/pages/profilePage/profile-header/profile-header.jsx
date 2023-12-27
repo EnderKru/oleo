@@ -1,9 +1,18 @@
+import {useState} from "react"
 import React from 'react'
-
+import { UserContext } from "../../../app"
 import classes from './profile-header.module.css'
 import { NavLink } from 'react-router-dom'
-
+ 
 export function ProfileHeader() {
+    const [user, setUser] = React.useContext(UserContext)
+    const toggleUserState = () => {
+      setUser((prevUser) => !prevUser);
+    };
+
+    const handleLogOut =() => {
+      toggleUserState()
+  }
   return (
     <div className={classes.header}>
       <div className={classes.conteiner}>
@@ -34,7 +43,7 @@ export function ProfileHeader() {
             <img src="../src/assets/фото/image 8person.png" alt="Mini Photo" className={classes.userImg} />
             <div className={classes.tooltiptext}>
               <NavLink to="/">
-                <div className={classes.logOut}>log out</div>
+                <div className={classes.logOut} onClick={handleLogOut}>log out</div>
               </NavLink>
             </div>
           </div>
