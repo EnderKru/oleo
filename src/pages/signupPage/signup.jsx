@@ -1,6 +1,7 @@
 import { CookButton } from '../../components/cook-button/cookButton'
 import '../signupPage/signup.css'
 import { useState } from 'react'
+import axios from 'axios'
 // import confirmCod from '../components/corfirm_cod'
 
 export function SignupPage() {
