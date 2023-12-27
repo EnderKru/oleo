@@ -93,6 +93,7 @@ export function CookPage() {
         </div>
 
         <div className="container-cook">
+          
           <div className="left">
             <div className="title-left">Cook your dish</div>
             <div className="input-left">
@@ -153,7 +154,7 @@ export function CookPage() {
 
             <div className="buttons-cook">
               <div className="COOK">
-                <a href="" onClick={openImage}>
+                <a href="" >
                   <img src="./src/assets/фото/image 43.svg" className="fork-cook" alt="Cook" />
                   COOK
                 </a>
@@ -199,5 +200,6 @@ export function CookPage() {
           </div>
         </div>
       </div>
+      
   );
 }

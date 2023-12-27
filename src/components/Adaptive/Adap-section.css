@@ -10,6 +10,30 @@
         margin-top: 40px;
         z-index: 1;
     }
+    .header  {
+        display: flex;
+        justify-content: space-around;
+    }
+      .header div {
+        position: absolute;
+        left: 0;
+        top:0;
+        margin-top: 1px;
+        
+      
+    }
+    .menu {
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        
+    }
+    .main-logo {
+        margin-top: 0;
+    }
+    .title span {
+        color:#FFDC33;
+    }
 
     .banner-title {
         margin: 0;
@@ -93,7 +117,9 @@
         color: #ffffff;
         border-bottom: none;
     }
-
+    .title span::before {
+        display: none;
+    }
     .rosberry {
         width: 45vh;
     }
@@ -128,7 +154,7 @@
 
     .zagol-of-button {
         margin-top: -100px;
-        margin-left: 0px;
+        margin-left: -15px;
     }
 
     .container {
@@ -253,7 +279,7 @@
        display: inline-block;
    }
    .title-of-comments::before {
-       width: 53px;
+       width: 64px;
        position: relative;
        right: 79px;
        top: 28px;
@@ -267,12 +293,53 @@
    
    
 }
-@media (max-width:430px) {
+@media (max-width:400px) { 
+   .img-box {
+    width: 10em;
+   }
+   .banner-photo {
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+
+}
+@media (max-width:450px) {
     .section1 {
         padding-left: 30px;
     }
+    .berries-1 {
+        margin-left: 100px;
+    }
+    .subt {
+        margin-left: 2%;
+        top: -10px
+    }
+
 .button {
     margin-left: 0px;
+
+}
+
+.subtitle-of-categories {
+    margin-left: 57px;
+    width: max-content;
+}
+.title-of-categories::before {
+    content:'';
+    display: block;
+    min-width: 50px;
+    height: 3px;
+    
+    color:#FFDC33;
+}
+.zagol .show {
+    padding-left: 0;
+}
+#cont-div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
     .card1, .card2, .card3 {
@@ -317,7 +384,7 @@
     }
     .img-box {
         height: 50vh;
-        width: 9.4vh;
+        width: 8.4vh;
         border-radius: 50px
     }
     .img-box:hover {
@@ -423,7 +490,7 @@
         margin-left: 10px;
     }
 }
-@media (min-width: 660px) { 
+@media (min-width: 660px)  { 
 
     
    .section1 {
@@ -431,3 +498,204 @@
    }
    
 }
+
+@media (min-width: 2200px) {
+    .banner {
+        display: flex;
+        justify-content: center;
+    }
+    .banner-title {
+        display: flex;
+        align-items: bottom;
+        justify-content: right;
+        height: fit-content;
+        margin-left: 100px;
+    }
+    .dish {
+        display: flex;
+        justify-content: end;
+        align-items:center;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (min-width:700px)  and (max-width:1000px){
+    .food {
+        width: 105%;
+    }
+    .img-box {
+        width: 20vh;
+    }
+    .dish {
+        margin-left: 340px;
+        margin-top: 10px;
+    }
+    .banner-photo {
+        background-size: 450px;   
+    }
+    
+    .berries-1 {
+        margin-left: 40px;
+        margin-top: -40px;
+        width: 430px;
+        height: auto;
+    }
+
+    .subtitle {
+        font-size: 26px;
+    }
+    .title {
+        font-size: 70px;
+    }
+    .zaz {
+        position: relative;
+        z-index: 2;
+    }
+   .cards {
+    /* justify-content: start;
+    align-items:start; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   }
+
+}
+@media (min-width:451px) and (max-width:1000px) {
+    .img-box {
+        height: 70vh;
+        width: 12vh;
+        border-radius: 50px
+    }
+    .card1, .card2 ,.card3 {
+        transform: scale(0.8);
+        transform-origin: 50% 100%;
+     }
+    .img-box:hover {
+        width: 170px;
+    }
+    .cards {
+        flex-wrap: wrap;
+        display: flex;
+
+    }
+    .img-box h3 {
+        font-size: 25px;
+    }
+    .gall {
+        margin-top: 100px;
+    }
+    
+  
+     .galerry {
+        display: flex;
+        justify-content: center;
+        width: max-content;
+     } 
+     #cont-div {
+        display: flex;
+        justify-content: center;
+     }
+     .box1 {
+        /* transform: scale(1.2); */
+     }
+    }
+    @media (min-width:620px) and (max-width:1000px) {
+
+    }
+    @media (min-width:300px) and (max-width:1000px){
+        .card1, .card2 ,.card3 {
+            transform: scale(0.8);
+            transform-origin: 50% 100%;
+         }
+         .card2 , .card3 {
+            height: 500px;
+            transform-origin: 50% 0%;
+         }
+         .card3 {
+            transform-origin: 50% -100%;
+            height: 570px;
+          
+         }
+         .card2 {
+            height: 570px;
+         }
+         .cards {
+            background-size: 150%;
+            background-repeat:no-repeat;
+            background-position-y:center;
+            height: fit-content;
+         }
+         .section3 {
+           margin-top: -260px;
+         }
+         .section2 {
+            height: fit-content;
+            
+         }
+         .rosberry {
+            width: 40%;
+            margin-left: -30px;
+         }
+         .cards::after {
+            display: none;
+         }
+         .dudes {
+            height: auto;
+            margin-top: 50px;
+         }
+         .dudes img {
+            max-width: 50%;
+            max-height: 50%;
+         }
+         .Kutmansher:hover,
+         .Tilekmat:hover,
+         .Myrza:hover  {
+            transform: scale(1);
+         }
+         .our-team {
+            width: auto;
+         }
+         .Tilekmat {
+            margin-left: 170px;
+         }
+         .kommenty::-webkit-scrollbar {
+            height: 1px;
+        }
+    
+        .box1 {
+            max-width: 100%;
+            height: auto;
+        }
+    
+    
+        .kommenty::-webkit-scrollbar-thumb {
+            background-color: #888;
+        }
+    
+        .testimonials {
+            overflow: hidden;
+            padding: 0;
+           
+        }
+    
+        .kommenty::-webkit-scrollbar {
+            height: 1px;
+        }
+        .comment-1 {
+            margin-left: 300px;
+        }
+        .kommenty {
+            overflow-x: auto;
+            white-space: nowrap;
+            display: flex;
+            scroll-behavior: smooth;
+            margin-right: 0;
+            margin-top: 60px;
+         }
+         .section5 {
+            height: fit-content;
+            background-size: 200%;
+         }
+    }

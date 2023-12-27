@@ -1,87 +1,4 @@
 
-.logo-cook {
-  width: 166px;
-  height: auto;
-  margin: 15px;
-}
-
-.custom-tooltip-cook {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  margin-right: 40px;
-}
-
-.custom-tooltip-cook .mini-photo-cook {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.custom-tooltip-cook .tooltiptext-cook {
-  visibility: hidden;
-  width: 120px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  top: 125%;
-  left: 30%;
-  margin-left: -55px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.custom-tooltip-cook:hover .tooltiptext-cook {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.tooltiptext-cook {
-  display: flex;
-  flex-direction: column;
-  margin-top: -20px;
-}
-
-.sign-up-cook,
-.log-in-cook {
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  font-size: 19px;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  border: 2px solid #ffffff;
-  border-radius: 89px;
-  padding: 10px 15px;
-  position: relative;
-  font-weight: lighter;
-  transition: all 0.5s ease;
-  margin-top: 20px;
-}
-.log-in-cook {
-  margin-bottom: 20px;
-}
-.sign-up-cook:hover,
-.log-in-cook:hover {
-  background-color: #FFDC33;
-  color: black;
-  border-color: black;
-  font-weight: 500;
-}
-
-.cook-page header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.mini-photo-cook {
-  margin-top: 20px;
-  width: 100%;
-}
 
 .title-left, .title-right {
   font-size: 48px;
@@ -190,6 +107,7 @@
   transition: border-color 0.3s;
   display: flex;
   align-items:end;
+  margin-bottom: 20px;
 }
 .box-cook:active {
   border-color: #FFDC33;
@@ -262,7 +180,7 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .container-cook {
     display: flex;
     flex-direction: column;
@@ -276,10 +194,9 @@
   }
   .right {
     margin-left: 0;
+    padding: 0 80px;
   }
-  .left {
-  
-  }
+
 }
 
 
@@ -289,9 +206,13 @@
     flex-direction: column;
     justify-content: start;
     align-items:center;
+    margin: 30px 100px;
   }
   .left {
     width: 600px;
+  }
+  .right {
+    padding: 0 14px;
   }
 
 }
@@ -299,9 +220,12 @@
    .container-cook {
     margin: auto 80px;
    }
+   .title-left {
+    margin-top: 50px;
+   }
    }
 
-@media (max-width: 450px) {
+@media (max-width: 700px) {
    .container-cook {
     margin: auto 30px;
    }
@@ -313,7 +237,7 @@
     margin-bottom: 30px;
    }
    .left {
-    width: 92%;
+    width: 92% !important;
     height: auto;
    }
    .title-cook {
@@ -325,23 +249,24 @@
     font-size: 20px;
    }
    .COOK {
-    width: 52%;
+    width: 150px;
     height: 50px;
    }
    .COOK a {
     font-size: 20px;
    }
    .custom-tooltip-cook {
-    margin-right: 10px;
-    margin-top: 0px;
+   
+    margin-right: 15px !important;
    }
    .fork-cook {
     width: 20px;
     height: auto;
     margin-right: 10px;
    }
-   .mini-photo-cook {
-    margin-top: 10px;
+  
+   #person-cook {
+    margin-top: 0;
    }
   .title-left {
    margin-top: 50px;
@@ -354,5 +279,62 @@
   }
 }
 
+@media (min-width:1440px) {
+  .container-cook  {
+    display: flex;
+    align-items:center;
+    justify-content: center;
 
+  }
+    .right, .left {
+      width: fit-content;
+    }
+    
+    
+   
+  
+
+}
+@media (min-width:2100px) { 
+   
+  .left {
+    margin-right: 120px;
+  }
+  .cook-page div {
+    /* max-width: 2100px; */
+  }
+}
+
+@media (min-width:2700px) { 
+   .header a {
+    margin-left: 100px;
+   }
+
+}
+@media (max-width:1469px) { 
+   .left {
+    width: 600px
+   }
+}
+@media (max-width:390px) { 
+  .i-cook{
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+   }
+   .COOK {
+    width: 150px;
+    height: 40px;
+   }
+   .COOK a {
+    font-size: 18px;
+   }
+   .title-cook {
+    font-size: 18px;
+   }
+   .custom-tooltip-cook .tooltiptext-cook  {
+    left: 0 !important;
+   }
+ 
+}
 

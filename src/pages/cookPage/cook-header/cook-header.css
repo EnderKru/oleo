@@ -1,0 +1,84 @@
+
+.logo-cook {
+    width: 166px;
+    height: auto;
+    margin: 15px;
+  }
+  
+  .custom-tooltip-cook {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 40px;
+  }
+  
+  .custom-tooltip-cook .mini-photo-cook {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .custom-tooltip-cook .tooltiptext-cook {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 30%;
+    margin-left: -55px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .custom-tooltip-cook:hover .tooltiptext-cook {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .tooltiptext-cook {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+  }
+  
+  .sign-up-cook,
+  .log-in-cook {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #ffffff;
+    border-radius: 89px;
+    padding: 10px 15px;
+    position: relative;
+    font-weight: lighter;
+    transition: all 0.5s ease;
+    margin-top: 20px;
+  }
+  .log-in-cook {
+    margin-bottom: 20px;
+  }
+  .sign-up-cook:hover,
+  .log-in-cook:hover {
+    background-color: #FFDC33;
+    color: black;
+    border-color: black;
+    font-weight: 500;
+  }
+  
+  .cook-page header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mini-photo-cook {
+    margin-top: 20px;
+    width: 100%;
+  }

@@ -1,7 +1,9 @@
-import React, { useState } from 'react' 
+import React, { createContext, useState } from 'react' 
 import {RouterProvider} from 'react-router-dom'
 import {router} from './app/index'
+// import { UserContext } from './UserContext';
 
+export const UserContext = createContext();
 
 const App = () => {
  

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"; 
+import './cook-header.css'
 
 export function CookHeader(){
     return(

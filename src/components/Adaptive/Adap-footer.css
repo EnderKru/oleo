@@ -1,4 +1,4 @@
-@media (max-width:430px) {
+@media (max-width:650px) {
     .ending {
         margin-left: 40px ;
         display: flex;
@@ -58,9 +58,14 @@
         width: 150px;
     }
 
+    .footer {
+        /* margin-top: 0; */
+    }
 
-
-
+    .subt {
+        margin-left: 20px;
+        top: -20px
+    }
 }
 
 

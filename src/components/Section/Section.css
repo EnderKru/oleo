@@ -26,7 +26,7 @@
   .title span {
     position: relative;
     z-index: 2;
-    color: #FFDC33;
+    color: #FFDC33  ;
   }
   
   .title span::before {
@@ -78,9 +78,7 @@
  }
 
  .banner-title {
-     /* background-image: url('./pages/фото/Frame 3.png'); */
      display: flex;
-     /* width: 580px; */
      background-position: left;
      background-repeat: no-repeat;
      height: 80vh;
@@ -158,7 +156,8 @@
 
  .card1,
  .card2,
- .card3 {
+ .card3
+  {
      width: 450px;
      height: 612px;
      border: 2px solid white;
@@ -168,16 +167,20 @@
      z-index: 3;
      background-color: black;
  }
+ .card3 {
+    box-shadow: 0 0 50px rgba(255, 220, 51, 0.5);
+
+ }
 
  .card1:hover,
- .card2:hover,
- .card3:hover {
+ .card2:hover
+ {
      box-shadow: 0 0 40px rgba(255, 220, 51, 0.5);
  }
 
  .card1:not(:hover),
- .card2:not(:hover),
- .card3 :not(:hover) {
+ .card2:not(:hover)
+ {
      transition: box-shadow 0.3s ease;
      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
  }
@@ -263,7 +266,7 @@
  }
 
  .subtitle-card3 {
-     font-size: 22px;
+     font-size: 22px; 
      font-family: 'Montserrat', sans-serif;
      margin-left: 34px;
      margin-top: 25px;
@@ -399,15 +402,15 @@
  }
  .img-box::before {
      content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  pointer-events: none;
-  z-index: 1;
-  border-radius: 20px;
+     /* position: absolute;
+     top: 0;
+     left: 0; */
+     width: 100%;
+     height: 50%;
+     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+     pointer-events: none;
+     z-index: 1;
+     border-radius: 20px;
  }
 
  .img-box:nth-child(2) {

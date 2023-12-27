@@ -138,8 +138,8 @@ window.addEventListener('scroll', () => {
                     <img src="./src/assets/фото/image 25.png" alt="" className='raspberry' />
 
                 <div/>
-                <div className='container'>
-                    <a href='http://localhost:5173/cook'>
+                <div className='container' id='cont-div'>
+                    <a href='http://localhost:5173/categories'>
                         <div className="galerry-wrap">
                         <div className="dark-overlay"></div> 
                             < div className="galerry" >
@@ -162,9 +162,9 @@ window.addEventListener('scroll', () => {
                 </div>
                 </div>
       </div>
-      <div className="section4">
+      <div className="section4" >
       <div className='our-team'>
-                    <div className="zagol-of-team" >
+                    <div className="zagol-of-team"  >
                         <div className="title-of-team">
                             Meet our team.
                         </div>
@@ -176,15 +176,15 @@ window.addEventListener('scroll', () => {
                     <div className="bg-of-team">
                         <img src="./src/assets/фото/Frame 8.png" alt="" />
                     </div>
-                    <div className="dudes">
+                    <div className="dudes" >
                         <img src="./src/assets/фото/Tilekmat.png" alt="" className='Tilekmat'></img>
-                        <img src="./src/assets/фото/Myrza.png" alt="" className='Myrza'></img>
+                        <img src="./src/assets/фото/Myrza.png" alt="" className='Myrza' id="section4"></img>
                         <img src="./src/assets/фото/Kutmansher.png" alt="" className='Kutmansher'></img>
 
                     </div>
                 </div>
       </div>
-      <div className="section5">
+      <div className="section5" id='section5'>
       <div className='testimonials'>
                     <div className="zagol-of-comments">
                         <div className="title-of-comments">
@@ -195,7 +195,7 @@ window.addEventListener('scroll', () => {
 
                         </div>
                     </div>
-                    <div className="kommenty">
+                    <div className="kommenty" id='section5'>
                         <div className="first-comment">
                             <div className="comment-1">
                             <div className="box1">
