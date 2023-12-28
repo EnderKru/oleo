@@ -1,6 +1,16 @@
 import { NavLink } from "react-router-dom"; 
+import React from "react";
+import { UserContext } from '../../../app'
 
 export function CookHeader(){
+    const [user, setUser] = React.useContext(UserContext)
+  const toggleUserState = () => {
+    setUser((prevUser) => !prevUser);
+  };
+
+  const handleLogOut =() => {
+    toggleUserState()
+  }
     return(
         <header>
             <div style={{
@@ -20,14 +30,25 @@ export function CookHeader(){
                         className="mini-photo-cook"
                         id="person-cook"
                         />
+                        {user ? (
                         <div className="tooltiptext-cook">
-                        <a href="http://localhost:5173/registration" className="sign-up-cook" >
-                            sign up
-                        </a>
-                        <a href="http://localhost:5173/login" className="log-in-cook" >
-                            log in
-                        </a>
+                            <NavLink to='/profile'>
+                            <a href='' className='sign-up'>profile</a>
+                            </NavLink>
+                            <NavLink to="/">
+                            <a href='' onClick={handleLogOut} className='sign-up'>log out</a>
+                            </NavLink>
                         </div>
+                        ) : (
+                        <div className="tooltiptext-cook">
+                            <NavLink to='/registration'>
+                            <a href='' className='sign-up'>sign up</a>
+                            </NavLink>
+                            <NavLink to='/login'>
+                            <a href='' className='log-in'>log in</a>
+                            </NavLink>
+                        </div>
+                        )}
                     </div>
                    
             </div>

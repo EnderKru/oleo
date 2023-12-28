@@ -7,8 +7,13 @@ import { UserContext } from '../../app'
 
 export function Header() {
   const [user, setUser] = React.useContext(UserContext)
+  const toggleUserState = () => {
+    setUser((prevUser) => !prevUser);
+  };
 
-
+  const handleLogOut =() => {
+    toggleUserState()
+  }
 // function scrollToTop(e) {
 //   e.preventDefault(); // Отмена дефолтного поведения
 //   window.scrollTo({
@@ -55,8 +60,8 @@ function scrollToTop() {
                 <NavLink to='/profile'>
                 <a href='' className='sign-up'>profile</a>
                 </NavLink>
-                <NavLink to='/'>
-                  <a href='' className='sign-up'>log out</a>
+                <NavLink to="/">
+                <a href='' onClick={handleLogOut} className='sign-up'>log out</a>
                 </NavLink>
               </div>
             ) : (

@@ -26,7 +26,7 @@ export function LoginPage() {
             password: password
           };
 
-          axios.post("http://85.209.9.201/api/v1/auth/login/ ", data).then((response) => {
+          axios.post("http://85.209.9.201:777/api/v1/regauth/login/", data).then((response) => {
             navigate('/')
           }).catch(e => {
             alert(e)
